@@ -1,0 +1,12 @@
+
+.\.venv\Scripts\Activate.ps1
+uv add fastmcp
+uv pip install fastmcp
+
+New-Item main.py -ItemType File
+
+
+
+fastmcp inspect main.py
+
+uv main.py 

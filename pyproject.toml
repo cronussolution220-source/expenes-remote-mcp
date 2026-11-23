@@ -1,0 +1,21 @@
+[project]
+name = "expenes-remote-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "praveen_learning", email = "princesoniy2001@gmail.com" }
+]
+requires-python = ">=3.11"
+
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "fastmcp>=4.2.4",
+]
+
+[project.scripts]
+expenes-remote-mcp = "expenes_remote_mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
